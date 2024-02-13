@@ -1,18 +1,8 @@
 "use strict";
-
-// npm i gulp && npm i gulp-tinypng-extended && npm install --save-dev gulp-plumber && npm i gulp-webp && npm install --save-dev gulp-webp && npm i gulp-real-favicon
-
-// npm i gulp
 const gulp = require("gulp");
 
-// WEBP
-// npm i gulp-webp && npm install --save-dev gulp-webp
-const webp = require("gulp-webp");
-
-gulp.task("webp", () => gulp.src("webp/*.{png,jpg,jpeg}").pipe(webp()).pipe(gulp.dest("webp/webp")));
-
 // TINYPNG
-// npm i gulp-tinypng-extended && npm install --save-dev gulp-plumber
+// npm i gulp-tinypng-extended && npm install gulp-plumber
 var plumber = require("gulp-plumber");
 var tinypng = require("gulp-tinypng-extended");
 
@@ -29,6 +19,12 @@ gulp.task("tiny", function () {
     )
     .pipe(gulp.dest("img/tiny/"));
 });
+
+// WEBP
+// npm i gulp-webp
+const webp = require("gulp-webp");
+
+gulp.task("webp", () => gulp.src("webp/*.{png,jpg,jpeg}").pipe(webp()).pipe(gulp.dest("webp/webp")));
 
 /* FAVICON */
 // npm i gulp-real-favicon
@@ -97,4 +93,4 @@ gulp.task("fav", function (done) {
   );
 });
 
-gulp.task("default");
+gulp.task("default", gulp.series("tiny"));

@@ -10,7 +10,9 @@ npx pwa-asset-generator fav.png icons
 ![image description](https://github.com/anastasiiaxfr/PWA-1/blob/main/img/pic2.jpg)
 ![image description](https://github.com/anastasiiaxfr/PWA-1/blob/main/img/pic3.jpg)
 ![image description](https://github.com/anastasiiaxfr/PWA-1/blob/main/img/pic4.jpg)
+![image description](https://github.com/anastasiiaxfr/PWA-1/blob/main/img/pic5.jpg)
+![image description](https://github.com/anastasiiaxfr/PWA-1/blob/main/img/pic6.jpg)
 
 ---
 
-npm i gulp && npm i gulp-tinypng-extended && npm install gulp-plumber && npm i gulp-webp && npm i gulp-real-favicon --save-dev
+npm i --save-dev gulp && npm i gulp-tinypng-extended && npm install gulp-plumber && npm i gulp-webp && npm i gulp-real-favicon

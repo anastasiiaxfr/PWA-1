@@ -1,14 +1,16 @@
 const staticCacheName = "s-app-v1";
 const dynamicCacheName = "d-app-v1";
 
-const assetUrls = ["index.html", "/js/app.js", "/css/styles.css", "offline.html"];
+const assetUrls = ["index.html", "/js/app.js", "/css/styles.css"];
 
 self.addEventListener("install", async (event) => {
+  // console.log("install");
   const cache = await caches.open(staticCacheName);
   await cache.addAll(assetUrls);
 });
 
 self.addEventListener("activate", async (event) => {
+  // console.log("activate");
   const cacheNames = await caches.keys();
   await Promise.all(
     cacheNames
@@ -41,7 +43,7 @@ async function networkFirst(request) {
     await cache.put(request, response.clone());
     return response;
   } catch (e) {
-    const cached = await cache.match(request);
-    return cached ?? (await caches.match("/offline.html"));
+    // const cached = await cache.match(request);
+    // return cached ?? (await caches.match("/offline.html"));
   }
 }

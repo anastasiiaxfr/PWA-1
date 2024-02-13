@@ -1,0 +1,21 @@
+{
+  "name": "pwa_0",
+  "version": "1.0.0",
+  "description": "- [app-manifest.firebaseapp.com](https://app-manifest.firebaseapp.com)\r - [www.pwabuilder.com](https://www.pwabuilder.com/imageGenerator)\r - [web.dev](https://web.dev/articles/add-manifest?hl=ru)",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "gulp"
+  },
+  "author": "Anastasiia_Berest",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2"
+  },
+  "dependencies": {
+    "gulp-plumber": "^1.2.1",
+    "gulp-real-favicon": "^0.3.2",
+    "gulp-tinypng-extended": "^3.0.3",
+    "gulp-webp": "^5.0.0"
+  }
+}
