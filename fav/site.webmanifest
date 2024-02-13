@@ -1,0 +1,101 @@
+{
+    "name": "PWA-1",
+    "short_name": "XFR1",
+    "description": "Lorem Ipsum is simply dummy text of the printing and typesetting industry.",
+    "orientation": "portrait",
+    "scope": "/",
+    "id": "/?source=pwa",
+    "start_url": "/?source=pwa",
+    "theme_color": "#fb0266",
+    "background_color": "#fb0266",
+    "display_override": [
+        "window-control-overlay",
+        "minimal-ui"
+    ],
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "/fav/android-chrome-36x36.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "/fav/android-chrome-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "/fav/android-chrome-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "/fav/android-chrome-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "/fav/android-chrome-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "/fav/android-chrome-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ],
+    "screenshots": [
+        {
+            "src": "/fav/img/screenshot1.png",
+            "type": "image/png",
+            "sizes": "540x720",
+            "form_factor": "narrow"
+        },
+        {
+            "src": "/fav/img/screenshot2.jpg",
+            "type": "image/jpg",
+            "sizes": "720x540",
+            "form_factor": "wide"
+        },
+        {
+            "src": "/fav/img/screenshot3.jpg",
+            "type": "image/jpg",
+            "sizes": "720x540",
+            "form_factor": "wide"
+        },
+        {
+            "src": "fav/img/screenshot3.webp",
+            "sizes": "1280x720",
+            "type": "image/webp",
+            "form_factor": "wide",
+            "label": "The About page shown on desktop."
+        }
+    ],
+    "shortcuts": [
+        {
+            "name": "PWA base shortcut 1",
+            "short_name": "one",
+            "description": "PWA base shortcut one",
+            "url": "/one?source=pwa",
+            "icons": [
+                {
+                    "src": "/fav/img/shortuts1.png",
+                    "sizes": "192x192"
+                }
+            ]
+        },
+        {
+            "name": "PWA base shortcut 2",
+            "short_name": "two",
+            "description": "PWA base shortcut two",
+            "url": "/two?source=pwa",
+            "icons": [
+                {
+                    "src": "/fav/img/shortuts2.png",
+                    "sizes": "192x192"
+                }
+            ]
+        }
+    ]
+}
