@@ -5,7 +5,7 @@
     "orientation": "portrait",
     "scope": "/",
     "id": "/?source=pwa",
-    "start_url": "/?source=pwa",
+    "start_url": "/index.html/?source=pwa",
     "theme_color": "#fb0266",
     "background_color": "#fb0266",
     "display_override": [
